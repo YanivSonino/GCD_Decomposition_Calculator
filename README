@@ -1,0 +1,22 @@
+File:gcd_decomposition.c
+multiple thread to calculate gcd and factors
+------------------------------------------------------------------------------
+Written by = Gal Meir Malka and Yaniv Sonino
+------------------------------------------------------------------------------
+program that creates 3 threads:
+1.gcd thread
+2.decomposition thread
+3.client thread
+the user enters a char for action(g for gcs,d for decomposition),and than gets 
+an answer from the target thread
+------------------------------------------------------------------------------
+Compile: gcc -Wall gcd_decomposition.c -lpthread -o gcd_decomposition
+Run:    ./gcd_decomposition
+Input:   char for action ("g" for gcd, "d" for decomposition) and values
+             1.(d) number for decomposition 
+             2.(g) numbers for gcd
+	     
+	     ^c to shut down all threads
+	     
+Output:  The answer
+
